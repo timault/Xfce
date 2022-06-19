@@ -1,0 +1,39 @@
+window.xfce4-panel widget > box > button > image{
+   padding: 0.2em 0.16em;  -gtk-icon-transform: scale(0.8);
+}
+
+window#whiskermenu-window treeview>* {
+  padding:0.2em 0.16em;
+}
+
+#whiskermenu-window {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#xfce4-notification-plugin image {
+	-gtk-icon-transform: scale(0.5) translateY(3px);
+}
+#pulseaudio-button image {
+	-gtk-icon-transform: scale(0.5);
+}
+#xfce4-power-manager-plugin image {
+	-gtk-icon-transform: scale(0.5);
+}
+
+VteTerminal, vte-terminal {
+    padding: 13px;
+}
+
+.xfce4-panel {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#whiskermenu-window border {
+    border-width: 2px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 4px; 
+}
+
