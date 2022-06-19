@@ -13,9 +13,13 @@ Don't forget to change your window manager theme as well
 Spicetify theme
 
 Updates:
+
 Uploaded Spotify theme
+
 Whisker menu: Radius sidebar & search bar
+
 Thunar: Radies sidebar
+
 Context Menus: Radius
 
 ![alt text](https://github.com/timault/Xfce/blob/main/Screenshot_2022-06-19_12-12-57.png?raw=true)
