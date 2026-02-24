@@ -42,3 +42,23 @@
 .workspace-switcher .workspace-button:checked {
     box-shadow: inset 0 0 0 2px @bg_color;
 }
+
+/* -------------------------------------------------
+   Floating‑panel illusion
+   ------------------------------------------------- */
+
+/* The whole panel gets a subtle “shadow” */
+.xfce4-panel {
+    /* Give it a soft, semi‑transparent border that looks like air */
+    background-color: rgba(30,30,30,0.92);   /* dark panel, slightly see‑through */
+    border-radius: 8px;                     /* rounded corners */
+    padding: 6px;                           /* internal space – makes icons look “lifted” */
+    margin: 6px;                            /* external space – creates the floating gap */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35); /* faint drop‑shadow */
+}
+
+/* Keep the panel’s background from spilling over the rounded corners */
+.xfce4-panel .panel-button,
+.xfce4-panel .tasklist-button {
+    border-radius: 6px;
+}
