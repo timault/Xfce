@@ -1,0 +1,44 @@
+/* -------------------------------------------------
+   Workspace Switcher → Dot mode
+   ------------------------------------------------- */
+
+/* The container that holds the buttons */
+.workspace-switcher {
+    /* Give the dots a little breathing room */
+    spacing: 6px;               /* distance between dots */
+}
+
+/* All workspace “buttons” become circles */
+.workspace-switcher button,
+.workspace-switcher .workspace-button {
+    min-width: 10px;            /* size of the dot */
+    min-height: 10px;
+    border-radius: 9999px;     /* force a perfect circle */
+    padding: 0;                 /* no extra padding */
+    margin: 0;                  /* keep them tight */
+
+    /* Base colour – the “off‑state” dots */
+    background-color: shade(@bg_color, 0.85);
+    background-image: none;    /* strip any default gradients */
+    border: none;               /* no borders, just pure dot */
+}
+
+/* Hover effect – a subtle glow */
+.workspace-switcher button:hover,
+.workspace-switcher .workspace-button:hover {
+    background-color: shade(@bg_color, 0.75);
+}
+
+/* The currently active workspace – make it pop */
+.workspace-switcher button:checked,
+.workspace-switcher .workspace-button:checked,
+.workspace-switcher button.active,
+.workspace-switcher .workspace-button.active {
+    background-color: @selected_bg_color;   /* bright accent */
+}
+
+/* Optional: a tiny inner “hole” for a modern look */
+.workspace-switcher button:checked,
+.workspace-switcher .workspace-button:checked {
+    box-shadow: inset 0 0 0 2px @bg_color;
+}
